@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wander &amp; Wake Price Watch</title>
+<meta name="description" content="An independent price-tracking dashboard watching wanderandwakestore.com and matched competitor listings.">
+<style>
+  :root {
+    color-scheme: light;
+    --surface-1:      #fcfcfb;
+    --page-plane:     #f9f9f7;
+    --text-primary:   #0b0b0b;
+    --text-secondary: #52514e;
+    --muted:          #898781;
+    --gridline:       #e1e0d9;
+    --border:         rgba(11,11,11,0.10);
+    --series-1:       #2a78d6;
+    --good:           #0ca30c;
+    --good-text:      #006300;
+    --warning:        #fab219;
+    --critical:       #d03b3b;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:where(:not([data-theme="light"])) {
+      color-scheme: dark;
+      --surface-1:      #1a1a19;
+      --page-plane:     #0d0d0d;
+      --text-primary:   #ffffff;
+      --text-secondary: #c3c2b7;
+      --muted:          #898781;
+      --gridline:       #2c2c2a;
+      --border:         rgba(255,255,255,0.10);
+      --series-1:       #3987e5;
+      --good:           #0ca30c;
+      --good-text:      #0ca30c;
+      --warning:        #fab219;
+      --critical:       #e66767;
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --surface-1:      #1a1a19;
+    --page-plane:     #0d0d0d;
+    --text-primary:   #ffffff;
+    --text-secondary: #c3c2b7;
+    --muted:          #898781;
+    --gridline:       #2c2c2a;
+    --border:         rgba(255,255,255,0.10);
+    --series-1:       #3987e5;
+    --good:           #0ca30c;
+    --good-text:      #0ca30c;
+    --warning:        #fab219;
+    --critical:       #e66767;
+  }
+
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--page-plane);
+    color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  body { padding: 20px 16px 64px; }
+  .wrap { max-width: 980px; margin: 0 auto; }
+
+  header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .subtitle { color: var(--text-secondary); font-size: 14px; max-width: 60ch; line-height: 1.5; margin: 0; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; color: var(--muted); font-size: 12.5px; margin: 14px 0 22px; }
+  .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--good); display: inline-block; margin-right: 6px; }
+  .dot.stale { background: var(--warning); }
+
+  button#theme-toggle {
+    border: 1px solid var(--border);
+    background: var(--surface-1);
+    color: var(--text-secondary);
+    border-radius: 8px;
+    padding: 6px 10px;
+    font-size: 12.5px;
+    cursor: pointer;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 14px;
+    margin-bottom: 36px;
+  }
+
+  .card {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .card h3 { font-size: 14.5px; line-height: 1.35; margin: 0 0 12px; font-weight: 600; min-height: 38px; }
+  .price-row { display: flex; align-items: baseline; justify-content: space-between; padding: 7px 0; border-top: 1px solid var(--gridline); }
+  .price-row:first-of-type { border-top: none; }
+  .retailer { font-size: 12.5px; color: var(--text-secondary); }
+  .price { font-size: 16px; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .price.lowest { color: var(--series-1); }
+  .tag {
+    display: inline-block;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: .02em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 6px;
+    vertical-align: middle;
+  }
+  .tag.lowest { background: color-mix(in srgb, var(--series-1) 16%, transparent); color: var(--series-1); }
+  .tag.stale { background: color-mix(in srgb, var(--warning) 22%, transparent); color: #8a5a00; }
+  .no-competitor { color: var(--muted); font-size: 12px; padding-top: 8px; }
+  .card-foot { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--gridline); font-size: 11px; color: var(--muted); }
+  .card-foot a { color: inherit; }
+
+  h2 { font-size: 16px; margin: 0 0 12px; }
+  .history { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+  .history-row { display: flex; align-items: center; gap: 12px; padding: 11px 16px; border-top: 1px solid var(--gridline); font-size: 13px; }
+  .history-row:first-child { border-top: none; }
+  .history-row .when { color: var(--muted); font-size: 11.5px; width: 128px; flex: none; }
+  .history-row .what { flex: 1; }
+  .history-row .delta { font-variant-numeric: tabular-nums; font-weight: 600; flex: none; }
+  .delta.down { color: var(--good-text); }
+  .delta.up { color: var(--critical); }
+  .empty-state { padding: 24px 16px; color: var(--muted); font-size: 13px; text-align: center; }
+
+  footer { margin-top: 40px; color: var(--muted); font-size: 11.5px; line-height: 1.6; max-width: 70ch; }
+  footer a { color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <h1>Wander &amp; Wake Price Watch</h1>
+      <p class="subtitle">Independently tracking product prices at wanderandwakestore.com against matched competitor listings. Not affiliated with Wander &amp; Wake.</p>
+    </div>
+    <button id="theme-toggle" type="button">Toggle theme</button>
+  </header>
+
+  <div class="meta-row">
+    <span id="last-updated"><span class="dot" id="freshness-dot"></span>Loading…</span>
+    <span id="run-summary"></span>
+  </div>
+
+  <div class="grid" id="product-grid"></div>
+
+  <h2>Recent price changes</h2>
+  <div class="history" id="history-list"></div>
+
+  <footer>
+    Prices are pulled directly from each store's own public product data on a schedule (see <code>.github/workflows/update-prices.yml</code>), not estimated or manually entered.
+    A store not updating here usually means its last scheduled check failed (flagged as <strong>stale</strong>) rather than a real price of zero — Price Watch never invents a price.
+    See this repository's README for how prices are checked and how to add more products.
+  </footer>
+</div>
+
+<script>
+(function () {
+  const THEME_KEY = "price-watch-theme";
+  const toggleBtn = document.getElementById("theme-toggle");
+  function applyTheme(mode) {
+    if (mode === "light" || mode === "dark") {
+      document.documentElement.setAttribute("data-theme", mode);
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  }
+  let saved = null;
+  try { saved = localStorage.getItem(THEME_KEY); } catch (e) { /* ignore: private browsing etc. */ }
+  applyTheme(saved);
+  toggleBtn.addEventListener("click", function () {
+    const current = document.documentElement.getAttribute("data-theme");
+    const prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const currentlyDark = current ? current === "dark" : prefersDark;
+    const next = currentlyDark ? "light" : "dark";
+    applyTheme(next);
+    try { localStorage.setItem(THEME_KEY, next); } catch (e) { /* ignore */ }
+  });
+
+  const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
+  function money(n) { return typeof n === "number" ? fmt.format(n) : "—"; }
+  function timeAgo(iso) {
+    if (!iso) return "never";
+    const diffMs = Date.now() - new Date(iso).getTime();
+    const mins = Math.round(diffMs / 60000);
+    if (mins < 1) return "just now";
+    if (mins < 60) return mins + " min ago";
+    const hrs = Math.round(mins / 60);
+    if (hrs < 24) return hrs + " hr ago";
+    return Math.round(hrs / 24) + " d ago";
+  }
+
+  function renderProducts(snapshot) {
+    const grid = document.getElementById("product-grid");
+    grid.innerHTML = "";
+    const products = Object.values(snapshot.products || {});
+    products.sort((a, b) => a.name.localeCompare(b.name));
+
+    for (const p of products) {
+      const card = document.createElement("div");
+      card.className = "card";
+
+      const listings = [];
+      if (p.own) listings.push(p.own);
+      for (const key in (p.competitors || {})) listings.push(p.competitors[key]);
+      const validPrices = listings.filter(l => typeof l.price_min === "number").map(l => l.price_min);
+      const lowest = validPrices.length ? Math.min(...validPrices) : null;
+
+      let rows = "";
+      for (const l of listings) {
+        const isLowest = lowest !== null && l.price_min === lowest && validPrices.length > 1;
+        const priceText = l.price_min === l.price_max ? money(l.price_min) : money(l.price_min) + "–" + money(l.price_max);
+        rows += `<div class="price-row">
+          <span class="retailer">${l.retailer}${l.stale ? '<span class="tag stale">stale</span>' : ''}</span>
+          <span class="price${isLowest ? ' lowest' : ''}">${priceText}${isLowest ? '<span class="tag lowest">lowest</span>' : ''}</span>
+        </div>`;
+      }
+      if (!p.competitors || Object.keys(p.competitors).length === 0) {
+        rows += `<div class="no-competitor">No confirmed competitor match tracked yet for this product.</div>`;
+      }
+
+      const checkedAt = p.own ? p.own.checked_at : null;
+      card.innerHTML = `
+        <h3>${p.name}</h3>
+        ${rows}
+        <div class="card-foot">Checked ${timeAgo(checkedAt)}${p.own && p.own.product_page ? ' · <a href="' + p.own.product_page + '" target="_blank" rel="noopener">view listing</a>' : ''}</div>
+      `;
+      grid.appendChild(card);
+    }
+
+    if (!products.length) {
+      grid.innerHTML = '<div class="empty-state">No product data yet — waiting on the first scheduled run.</div>';
+    }
+  }
+
+  function renderHistory(history) {
+    const list = document.getElementById("history-list");
+    list.innerHTML = "";
+    const events = (history || []).slice().reverse().slice(0, 40);
+    if (!events.length) {
+      list.innerHTML = '<div class="empty-state">No price changes recorded yet. This fills in as checks run over time.</div>';
+      return;
+    }
+    for (const ev of events) {
+      const went = ev.new_price - ev.old_price;
+      const direction = went < 0 ? "down" : "up";
+      const arrow = went < 0 ? "▾" : "▴";
+      const row = document.createElement("div");
+      row.className = "history-row";
+      row.innerHTML = `
+        <span class="when">${timeAgo(ev.at)}</span>
+        <span class="what">${ev.product_name} — ${ev.retailer}</span>
+        <span class="delta ${direction}">${arrow} ${money(ev.old_price)} → ${money(ev.new_price)}</span>
+      `;
+      list.appendChild(row);
+    }
+  }
+
+  function renderMeta(snapshot, lastRun) {
+    const dot = document.getElementById("freshness-dot");
+    const stale = Object.values(snapshot.products || {}).some(p =>
+      (p.own && p.own.stale) || Object.values(p.competitors || {}).some(c => c.stale)
+    );
+    dot.className = "dot" + (stale ? " stale" : "");
+    document.getElementById("last-updated").innerHTML =
+      '<span class="dot' + (stale ? ' stale' : '') + '"></span>Last checked ' + timeAgo(snapshot.generated_at) +
+      (stale ? " — some sources failed their last check (flagged below)" : "");
+    if (lastRun) {
+      document.getElementById("run-summary").textContent =
+        lastRun.changed ? `${lastRun.changed} price change(s) this run` : "No changes last run";
+    }
+  }
+
+  async function loadAll() {
+    try {
+      const bust = "?_=" + Date.now();
+      const [snapRes, histRes, runRes] = await Promise.all([
+        fetch("data/snapshot.json" + bust, { cache: "no-store" }),
+        fetch("data/history.json" + bust, { cache: "no-store" }).catch(() => null),
+        fetch("data/last_run.json" + bust, { cache: "no-store" }).catch(() => null),
+      ]);
+      const snapshot = await snapRes.json();
+      const history = histRes && histRes.ok ? await histRes.json() : [];
+      const lastRun = runRes && runRes.ok ? await runRes.json() : null;
+      renderProducts(snapshot);
+      renderHistory(history);
+      renderMeta(snapshot, lastRun);
+    } catch (err) {
+      document.getElementById("product-grid").innerHTML =
+        '<div class="empty-state">Could not load data/snapshot.json. If you just set this up, wait for the first GitHub Action run to finish.</div>';
+      console.error(err);
+    }
+  }
+
+  loadAll();
+  setInterval(loadAll, 60000); // keep an open tab live without a manual reload
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "store": {
+    "name": "Wander & Wake",
+    "domain": "wanderandwakestore.com",
+    "note": "Tracked as an external/competitor store — Price Watch does not have admin access to it. All prices come from its public Shopify storefront API, the same JSON every browser loads when you view a product page."
+  },
+  "poll_interval_minutes": 15,
+  "products": [
+    {
+      "id": "wow-pfd-child",
+      "name": "WOW Watersports Children's Life Jacket (USCG & Transport Canada Approved)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-pfd-personal-floatation-device-lifejacket-for-children.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-pfd-personal-floatation-device-lifejacket-for-children"
+      },
+      "competitors": [
+        {
+          "retailer": "Up North Sports",
+          "type": "shopify_json",
+          "url": "https://www.upnorthsports.com/products/wow-sports-feel-good-child-life-vest.json",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-feel-good-child-life-vest",
+          "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827)."
+        }
+      ]
+    },
+    {
+      "id": "wow-pump-12v",
+      "name": "WOW Watersports Speed-X 12V Inflator Pump",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-12v-dc-inflator-pump-for-inflatables-and-towables.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-12v-dc-inflator-pump-for-inflatables-and-towables"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-wakesurf-rope-25",
+      "name": "WOW Watersports 25 ft Wakesurf Rope (4-Section, EVA Handle)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-25ft-4-section-wakesurf-rope.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-25ft-4-section-wakesurf-rope"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-saddle-seat",
+      "name": "WOW Watersports Vacation Mode Molded Foam Saddle Seat",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-saddle-seat.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-saddle-seat"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-pool-noodle",
+      "name": "WOW Watersports Vacation Mode Molded Foam Pool Noodle",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-pool-noodle.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-pool-noodle"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-vis-wave-adult",
+      "name": "WOW Watersports Vis-Wave Adult Life Vest (USCG-Approved PFD)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-vis-wave-adult-life-vest-blue.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vis-wave-adult-life-vest-blue"
+      },
+      "competitors": [
+        {
+          "retailer": "Up North Sports",
+          "type": "shopify_json",
+          "url": "https://www.upnorthsports.com/products/wow-sports-vis-wave-adult-life-vest.json",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-vis-wave-adult-life-vest",
+          "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores."
+        }
+      ]
+    },
+    {
+      "id": "wow-resort-island",
+      "name": "WOW Watersports Inflatable Resort Island (6-8 Person Floating Lounger)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-inflatable-lounging-resort-island-for-6-8-people.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-inflatable-lounging-resort-island-for-6-8-people"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-ski-rope-75",
+      "name": "WOW Watersports 75 ft Water Ski Rope (2-Section, Floating)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-75ft-2-section-uv-treated-water-ski-rope.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-75ft-2-section-uv-treated-water-ski-rope"
+      },
+      "competitors": []
+    },
+    {
+      "id": "wow-water-walkway",
+      "name": "WOW Watersports Inflatable Water Walkway (6 ft x 6 ft Floating Platform)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/wow-watersports-floating-water-mat-for-the-pool-and-lake.json",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-floating-water-mat-for-the-pool-and-lake"
+      },
+      "competitors": []
+    }
+  ]
+}

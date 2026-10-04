@@ -1,0 +1,165 @@
+{
+  "products": {
+    "wow-pfd-child": {
+      "id": "wow-pfd-child",
+      "name": "WOW Watersports Children's Life Jacket (USCG & Transport Canada Approved)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-pfd-personal-floatation-device-lifejacket-for-children",
+        "price_min": 79.95,
+        "price_max": 79.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {
+        "Up North Sports": {
+          "retailer": "Up North Sports",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-feel-good-child-life-vest",
+          "price_min": 69.99,
+          "price_max": 69.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-04T18:33:00Z",
+          "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827).",
+          "stale": false
+        }
+      }
+    },
+    "wow-pump-12v": {
+      "id": "wow-pump-12v",
+      "name": "WOW Watersports Speed-X 12V Inflator Pump",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-12v-dc-inflator-pump-for-inflatables-and-towables",
+        "price_min": 49.95,
+        "price_max": 49.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-wakesurf-rope-25": {
+      "id": "wow-wakesurf-rope-25",
+      "name": "WOW Watersports 25 ft Wakesurf Rope (4-Section, EVA Handle)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-25ft-4-section-wakesurf-rope",
+        "price_min": 64.99,
+        "price_max": 64.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-saddle-seat": {
+      "id": "wow-saddle-seat",
+      "name": "WOW Watersports Vacation Mode Molded Foam Saddle Seat",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-saddle-seat",
+        "price_min": 52.95,
+        "price_max": 52.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-pool-noodle": {
+      "id": "wow-pool-noodle",
+      "name": "WOW Watersports Vacation Mode Molded Foam Pool Noodle",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-pool-noodle",
+        "price_min": 44.99,
+        "price_max": 49.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-vis-wave-adult": {
+      "id": "wow-vis-wave-adult",
+      "name": "WOW Watersports Vis-Wave Adult Life Vest (USCG-Approved PFD)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-vis-wave-adult-life-vest-blue",
+        "price_min": 79.95,
+        "price_max": 79.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {
+        "Up North Sports": {
+          "retailer": "Up North Sports",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-vis-wave-adult-life-vest",
+          "price_min": 59.99,
+          "price_max": 59.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-04T18:33:00Z",
+          "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores.",
+          "stale": false
+        }
+      }
+    },
+    "wow-resort-island": {
+      "id": "wow-resort-island",
+      "name": "WOW Watersports Inflatable Resort Island (6-8 Person Floating Lounger)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-inflatable-lounging-resort-island-for-6-8-people",
+        "price_min": 329.99,
+        "price_max": 329.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-ski-rope-75": {
+      "id": "wow-ski-rope-75",
+      "name": "WOW Watersports 75 ft Water Ski Rope (2-Section, Floating)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-75ft-2-section-uv-treated-water-ski-rope",
+        "price_min": 64.99,
+        "price_max": 64.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    },
+    "wow-water-walkway": {
+      "id": "wow-water-walkway",
+      "name": "WOW Watersports Inflatable Water Walkway (6 ft x 6 ft Floating Platform)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/wow-watersports-floating-water-mat-for-the-pool-and-lake",
+        "price_min": 169.95,
+        "price_max": 169.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-04T18:33:00Z",
+        "stale": false
+      },
+      "competitors": {}
+    }
+  },
+  "generated_at": "2026-10-04T18:33:00Z",
+  "seed_note": "This initial snapshot was hand-seeded from manual checks made while building this tool. The next scheduled GitHub Action run will refresh every price live and take over from here."
+}

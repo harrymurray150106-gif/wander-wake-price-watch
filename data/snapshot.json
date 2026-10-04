@@ -10,7 +10,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:00Z",
         "stale": false
       },
       "competitors": {
@@ -21,7 +21,7 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-04T18:33:00Z",
+          "checked_at": "2026-10-04T20:48:00Z",
           "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827).",
           "stale": false
         }
@@ -37,7 +37,7 @@
         "price_max": 49.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:00Z",
         "stale": false
       },
       "competitors": {}
@@ -52,7 +52,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:00Z",
         "stale": false
       },
       "competitors": {}
@@ -67,7 +67,7 @@
         "price_max": 52.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:00Z",
         "stale": false
       },
       "competitors": {}
@@ -82,7 +82,7 @@
         "price_max": 49.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:01Z",
         "stale": false
       },
       "competitors": {}
@@ -97,7 +97,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:01Z",
         "stale": false
       },
       "competitors": {
@@ -108,7 +108,7 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-04T18:33:00Z",
+          "checked_at": "2026-10-04T20:48:01Z",
           "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores.",
           "stale": false
         }
@@ -124,7 +124,7 @@
         "price_max": 329.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:01Z",
         "stale": false
       },
       "competitors": {}
@@ -139,7 +139,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:01Z",
         "stale": false
       },
       "competitors": {}
@@ -154,12 +154,12 @@
         "price_max": 169.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-04T18:33:00Z",
+        "checked_at": "2026-10-04T20:48:01Z",
         "stale": false
       },
       "competitors": {}
     }
   },
-  "generated_at": "2026-10-04T18:33:00Z",
+  "generated_at": "2026-10-04T20:48:01Z",
   "seed_note": "This initial snapshot was hand-seeded from manual checks made while building this tool. The next scheduled GitHub Action run will refresh every price live and take over from here."
 }

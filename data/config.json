@@ -234,6 +234,202 @@
           "match_note": "Manufacturer's own store — identical model 14-2080."
         }
       ]
+    },
+    {
+      "id": "hoto-wand",
+      "name": "HOTO Wand Cordless Spin Scrubber",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/hoto-wand%E2%84%A2-cordless-spin-scrubber.json",
+        "product_page": "https://wanderandwakestore.com/products/hoto-wand%E2%84%A2-cordless-spin-scrubber"
+      },
+      "competitors": [
+        {
+          "retailer": "HOTO (official store)",
+          "type": "shopify_json",
+          "url": "https://www.hototools.com/products/hoto-wand-cordless-spin-scrubber.json",
+          "product_page": "https://www.hototools.com/products/hoto-wand-cordless-spin-scrubber",
+          "match_note": "Manufacturer's own store — identical SKU QWQJA07."
+        }
+      ]
+    },
+    {
+      "id": "umbrauto-short-mattress",
+      "name": "Umbrauto Short Bed Truck Air Mattress (5.5–5.8 ft)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-teal.json",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-teal"
+      },
+      "competitors": [
+        {
+          "retailer": "Umbrauto (official store)",
+          "type": "shopify_json",
+          "url": "https://umbrauto.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-blue-oae.json",
+          "product_page": "https://umbrauto.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-blue-oae",
+          "match_note": "Manufacturer's own store — identical SKU AIR-PICKUP-ZQG."
+        }
+      ]
+    },
+    {
+      "id": "umbrauto-tent-awning",
+      "name": "Umbrauto Truck Bed Tent with Awning (5.5–5.8 ft)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/umbrauto-truck-bed-tent-with-awning-fits-5-5-5-8-ft-truck-beds-pu3000mm-waterproof-pickup-tent.json",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-truck-bed-tent-with-awning-fits-5-5-5-8-ft-truck-beds-pu3000mm-waterproof-pickup-tent"
+      },
+      "competitors": [
+        {
+          "retailer": "Umbrauto (official store)",
+          "type": "shopify_json",
+          "url": "https://umbrauto.com/products/umbrauto-5-5-5-8-pu3000mm-waterproof-truck-bed-tent-with-awning.json",
+          "product_page": "https://umbrauto.com/products/umbrauto-5-5-5-8-pu3000mm-waterproof-truck-bed-tent-with-awning",
+          "match_note": "Manufacturer's own store — identical SKUs PKT201/202/203/205-5558W."
+        }
+      ]
+    },
+    {
+      "id": "umbrauto-camper-cover",
+      "name": "Umbrauto Pop-Up Camper Cover",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents.json",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents"
+      },
+      "competitors": [
+        {
+          "retailer": "Umbrauto (official store)",
+          "type": "shopify_json",
+          "url": "https://umbrauto.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents.json",
+          "product_page": "https://umbrauto.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents",
+          "match_note": "Manufacturer's own store — identical SKUs RV9005-0810 to RV9005-1820, same sizes."
+        }
+      ]
+    },
+    {
+      "id": "rockbros-cooler",
+      "name": "ROCKBROS 22L Soft Cooler Bag",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/rockbros-22l-leakproof-soft-cooler-bag-waterproof-insulation-multiple-carrier-ways-anti-spill-design.json",
+        "product_page": "https://wanderandwakestore.com/products/rockbros-22l-leakproof-soft-cooler-bag-waterproof-insulation-multiple-carrier-ways-anti-spill-design"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 109.99,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B08BYGW424",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B08BYGW424 — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
+    },
+    {
+      "id": "eygde-surge",
+      "name": "EYGDE 50 Amp RV Surge Protector",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/eygde-rv-surge-protector-50-amp-waterproof-smart-50-amp-surge-protectors-for-rv-with-real-time-kwh-voltage-monitor-surge-protector-for-camper-travel-trailerorange-50a.json",
+        "product_page": "https://wanderandwakestore.com/products/eygde-rv-surge-protector-50-amp-waterproof-smart-50-amp-surge-protectors-for-rv-with-real-time-kwh-voltage-monitor-surge-protector-for-camper-travel-trailerorange-50a"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 109.99,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B0D2HLD69N",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0D2HLD69N — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
+    },
+    {
+      "id": "addsafety-nav-light",
+      "name": "AddSafety 5 ft LED Boat Navigation Light",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/addsafety-5ft-nav-lights-for-boat-plug-in-base-boat-whip-light-chasing-color-boat-navigation-light-with-remote-control-led-boat-light-anchor-boat-accessories.json",
+        "product_page": "https://wanderandwakestore.com/products/addsafety-5ft-nav-lights-for-boat-plug-in-base-boat-whip-light-chasing-color-boat-navigation-light-with-remote-control-led-boat-light-anchor-boat-accessories"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 105.99,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B0BC1K4K65",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0BC1K4K65 — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
+    },
+    {
+      "id": "ayaport-straps",
+      "name": "AYAPORT Boat Trailer Tie-Down Straps (2-Pack)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/ayaport-boat-tie-down-straps-to-trailer-stainless-steel-ratchet-5-feet-4400lbs-break-strength-heavy-duty-ratchet-boat-straps-boat-transom-straps-boat-trailer-accessories-for-boating-safety.json",
+        "product_page": "https://wanderandwakestore.com/products/ayaport-boat-tie-down-straps-to-trailer-stainless-steel-ratchet-5-feet-4400lbs-break-strength-heavy-duty-ratchet-boat-straps-boat-transom-straps-boat-trailer-accessories-for-boating-safety"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 47.91,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B0D4YRXDYK",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0D4YRXDYK — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
+    },
+    {
+      "id": "lanedo-cooler",
+      "name": "Lanedo 20-Can Soft Cooler Bag",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/lanedo-lunch-soft-cooler-20-can-soft-carrying-handle-insulated-bag-portable-ice-chest-box-for-lunch-beach-drink-beverage-travel-camping-picnic-car-trips-cooler-leak-proof-orange.json",
+        "product_page": "https://wanderandwakestore.com/products/lanedo-lunch-soft-cooler-20-can-soft-carrying-handle-insulated-bag-portable-ice-chest-box-for-lunch-beach-drink-beverage-travel-camping-picnic-car-trips-cooler-leak-proof-orange"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 24.99,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B0C3CT2B6B",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0C3CT2B6B — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
+    },
+    {
+      "id": "allerpet",
+      "name": "Allerpet Pet Dander Remover (12 oz)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "type": "shopify_json",
+        "url": "https://wanderandwakestore.com/products/allerpet-pet-12-oz.json",
+        "product_page": "https://wanderandwakestore.com/products/allerpet-pet-12-oz"
+      },
+      "competitors": [
+        {
+          "retailer": "Amazon",
+          "type": "manual",
+          "price": 17.99,
+          "verified_at": "2026-10-05T16:55:00Z",
+          "product_page": "https://www.amazon.com/dp/B011O35WCM",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B011O35WCM — same listing. Amazon blocks automated checks, so this price was verified by hand."
+        }
+      ]
     }
   ]
 }

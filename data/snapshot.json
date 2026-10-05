@@ -10,7 +10,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:07Z",
+        "checked_at": "2026-10-05T16:25:36Z",
         "stale": false
       },
       "competitors": {
@@ -21,8 +21,21 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T09:28:07Z",
+          "checked_at": "2026-10-05T16:25:36Z",
           "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827).",
+          "manual": false,
+          "stale": false
+        },
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/the-feel-good-child-life-vest-1",
+          "price_min": 69.99,
+          "price_max": 69.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:36Z",
+          "match_note": "Manufacturer's own store — identical model 23-WLV-4827.",
+          "manual": false,
           "stale": false
         }
       }
@@ -37,10 +50,35 @@
         "price_max": 49.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:08Z",
+        "checked_at": "2026-10-05T16:25:37Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "Up North Sports": {
+          "retailer": "Up North Sports",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-12v-dc-electric-inflator-pump",
+          "price_min": 32.99,
+          "price_max": 32.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:37Z",
+          "match_note": "Confirmed same product — shared SKU core 4020 (W&W: 13-4020-WOW, Up North: WOW13-4020).",
+          "manual": false,
+          "stale": false
+        },
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/12v-dc-electric-inflator-pump",
+          "price_min": 32.99,
+          "price_max": 32.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:37Z",
+          "match_note": "Manufacturer's own store — identical model 13-4020.",
+          "manual": false,
+          "stale": false
+        }
+      }
     },
     "wow-wakesurf-rope-25": {
       "id": "wow-wakesurf-rope-25",
@@ -52,10 +90,35 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:08Z",
+        "checked_at": "2026-10-05T16:25:37Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/25-4-section-wakesurf-rope",
+          "price_min": 54.99,
+          "price_max": 54.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:38Z",
+          "match_note": "Manufacturer's own store — identical model 22-WRP-4612.",
+          "manual": false,
+          "stale": false
+        },
+        "Walmart": {
+          "retailer": "Walmart",
+          "product_page": "https://www.walmart.com/ip/WOW-Sports-25-Towing-Rope-for-Wakesurf-and-Watersports-4-Section-Rope-25/2754361616",
+          "price_min": 54.99,
+          "price_max": 54.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T15:30:00Z",
+          "match_note": "Listing page names model 22-WRP-4612; sold by WOW Sports. Walmart blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
     },
     "wow-saddle-seat": {
       "id": "wow-saddle-seat",
@@ -67,10 +130,35 @@
         "price_max": 52.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:08Z",
+        "checked_at": "2026-10-05T16:25:38Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/vacation-mode-saddle-seats",
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:38Z",
+          "match_note": "Manufacturer's own store — identical models 24-WFO-5670/5671/5672.",
+          "manual": false,
+          "stale": false
+        },
+        "Overton's": {
+          "retailer": "Overton's",
+          "product_page": "https://www.overtons.com/wow-molded-foam-aqua-saddle-seat-370733.html",
+          "price_min": 29.99,
+          "price_max": 29.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:39Z",
+          "match_note": "Listing page names model 24-WFO-5670 (blue).",
+          "manual": false,
+          "stale": false
+        }
+      }
     },
     "wow-pool-noodle": {
       "id": "wow-pool-noodle",
@@ -82,10 +170,23 @@
         "price_max": 49.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:09Z",
+        "checked_at": "2026-10-05T16:25:39Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/vacation-mode-pool-noodle",
+          "price_min": 19.99,
+          "price_max": 19.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:39Z",
+          "match_note": "Manufacturer's own store — identical models 24-WFO-5667/5668/5669.",
+          "manual": false,
+          "stale": false
+        }
+      }
     },
     "wow-vis-wave-adult": {
       "id": "wow-vis-wave-adult",
@@ -97,7 +198,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:09Z",
+        "checked_at": "2026-10-05T16:25:40Z",
         "stale": false
       },
       "competitors": {
@@ -108,8 +209,21 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T09:28:09Z",
+          "checked_at": "2026-10-05T16:25:40Z",
           "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores.",
+          "manual": false,
+          "stale": false
+        },
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/var-6933",
+          "price_min": 59.99,
+          "price_max": 59.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:40Z",
+          "match_note": "Manufacturer's own store — identical models 24-WLV-5636/5637/5638/5927.",
+          "manual": false,
           "stale": false
         }
       }
@@ -124,10 +238,35 @@
         "price_max": 329.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:09Z",
+        "checked_at": "2026-10-05T16:25:40Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/the-wow-resort-island",
+          "price_min": 247.49,
+          "price_max": 247.49,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:40Z",
+          "match_note": "Manufacturer's own store — identical model 23-WIL-4759.",
+          "manual": false,
+          "stale": false
+        },
+        "Overton's": {
+          "retailer": "Overton's",
+          "product_page": "https://www.overtons.com/wow-resort-island-384328.html",
+          "price_min": 299.99,
+          "price_max": 299.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:41Z",
+          "match_note": "Listing page names model 23-WIL-4759.",
+          "manual": false,
+          "stale": false
+        }
+      }
     },
     "wow-ski-rope-75": {
       "id": "wow-ski-rope-75",
@@ -139,10 +278,35 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:10Z",
+        "checked_at": "2026-10-05T16:25:41Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/75-2-section-watersports-rope",
+          "price_min": 32.99,
+          "price_max": 32.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:41Z",
+          "match_note": "Manufacturer's own store — identical model 22-WRP-4603.",
+          "manual": false,
+          "stale": false
+        },
+        "Newegg (JupiterGear)": {
+          "retailer": "Newegg (JupiterGear)",
+          "product_page": "https://www.newegg.com/p/0JK-01NG-00015",
+          "price_min": 49.99,
+          "price_max": 49.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T15:30:00Z",
+          "match_note": "Listing names model 22-WRP-4603, UPC 04897034348118. Newegg blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
     },
     "wow-water-walkway": {
       "id": "wow-water-walkway",
@@ -154,12 +318,36 @@
         "price_max": 169.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T09:28:10Z",
+        "checked_at": "2026-10-05T16:25:42Z",
         "stale": false
       },
-      "competitors": {}
+      "competitors": {
+        "Up North Sports": {
+          "retailer": "Up North Sports",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-water-mat-6-x-6-ft",
+          "price_min": 164.99,
+          "price_max": 164.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:42Z",
+          "match_note": "Confirmed same product — shared SKU core 2080 (W&W: 14-2080-WOW, Up North: WOW14-2080).",
+          "manual": false,
+          "stale": false
+        },
+        "WOW Sports (official store)": {
+          "retailer": "WOW Sports (official store)",
+          "product_page": "https://wowsports.com/products/water-mat-6x6-ft",
+          "price_min": 99.99,
+          "price_max": 99.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:25:42Z",
+          "match_note": "Manufacturer's own store — identical model 14-2080.",
+          "manual": false,
+          "stale": false
+        }
+      }
     }
   },
-  "generated_at": "2026-10-05T09:28:10Z",
-  "seed_note": "This initial snapshot was hand-seeded from manual checks made while building this tool. The next scheduled GitHub Action run will refresh every price live and take over from here."
+  "generated_at": "2026-10-05T16:25:42Z"
 }

@@ -8,50 +8,50 @@
 <style>
   :root {
     color-scheme: light;
-    --surface-1:      #fcfcfb;
-    --page-plane:     #f9f9f7;
-    --text-primary:   #0b0b0b;
+    --surface-1: #fcfcfb;
+    --page-plane: #f9f9f7;
+    --text-primary: #0b0b0b;
     --text-secondary: #52514e;
-    --muted:          #898781;
-    --gridline:       #e1e0d9;
-    --border:         rgba(11,11,11,0.10);
-    --series-1:       #2a78d6;
-    --good:           #0ca30c;
-    --good-text:      #006300;
-    --warning:        #fab219;
-    --critical:       #d03b3b;
+    --muted: #898781;
+    --gridline: #e1e0d9;
+    --border: rgba(11,11,11,0.10);
+    --series-1: #2a78d6;
+    --good: #0ca30c;
+    --good-text: #006300;
+    --warning: #fab219;
+    --critical: #d03b3b;
   }
   @media (prefers-color-scheme: dark) {
     :root:where(:not([data-theme="light"])) {
       color-scheme: dark;
-      --surface-1:      #1a1a19;
-      --page-plane:     #0d0d0d;
-      --text-primary:   #ffffff;
+      --surface-1: #1a1a19;
+      --page-plane: #0d0d0d;
+      --text-primary: #ffffff;
       --text-secondary: #c3c2b7;
-      --muted:          #898781;
-      --gridline:       #2c2c2a;
-      --border:         rgba(255,255,255,0.10);
-      --series-1:       #3987e5;
-      --good:           #0ca30c;
-      --good-text:      #0ca30c;
-      --warning:        #fab219;
-      --critical:       #e66767;
+      --muted: #898781;
+      --gridline: #2c2c2a;
+      --border: rgba(255,255,255,0.10);
+      --series-1: #3987e5;
+      --good: #0ca30c;
+      --good-text: #0ca30c;
+      --warning: #fab219;
+      --critical: #e66767;
     }
   }
   :root[data-theme="dark"] {
     color-scheme: dark;
-    --surface-1:      #1a1a19;
-    --page-plane:     #0d0d0d;
-    --text-primary:   #ffffff;
+    --surface-1: #1a1a19;
+    --page-plane: #0d0d0d;
+    --text-primary: #ffffff;
     --text-secondary: #c3c2b7;
-    --muted:          #898781;
-    --gridline:       #2c2c2a;
-    --border:         rgba(255,255,255,0.10);
-    --series-1:       #3987e5;
-    --good:           #0ca30c;
-    --good-text:      #0ca30c;
-    --warning:        #fab219;
-    --critical:       #e66767;
+    --muted: #898781;
+    --gridline: #2c2c2a;
+    --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5;
+    --good: #0ca30c;
+    --good-text: #0ca30c;
+    --warning: #fab219;
+    --critical: #e66767;
   }
 
   * { box-sizing: border-box; }
@@ -68,7 +68,7 @@
   header { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: space-between; gap: 12px; margin-bottom: 4px; }
   h1 { font-size: 22px; margin: 0 0 4px; }
   .subtitle { color: var(--text-secondary); font-size: 14px; max-width: 60ch; line-height: 1.5; margin: 0; }
-  .meta-row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; color: var(--muted); font-size: 12.5px; margin: 14px 0 22px; }
+  .meta-row { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; color: var(--muted); font-size: 12.5px; margin: 14px 0 18px; }
   .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--good); display: inline-block; margin-right: 6px; }
   .dot.stale { background: var(--warning); }
 
@@ -82,6 +82,22 @@
     cursor: pointer;
   }
 
+  .summary {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .stat {
+    background: var(--surface-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 14px 16px;
+  }
+  .stat .label { font-size: 12px; color: var(--text-secondary); margin-bottom: 4px; }
+  .stat .value { font-size: 24px; font-weight: 650; font-variant-numeric: tabular-nums; }
+  .stat .value.bad { color: var(--critical); }
+
   .grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -94,12 +110,17 @@
     border: 1px solid var(--border);
     border-radius: 12px;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
   }
   .card h3 { font-size: 14.5px; line-height: 1.35; margin: 0 0 12px; font-weight: 600; min-height: 38px; }
-  .price-row { display: flex; align-items: baseline; justify-content: space-between; padding: 7px 0; border-top: 1px solid var(--gridline); }
+  .price-row { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 7px 0; border-top: 1px solid var(--gridline); }
   .price-row:first-of-type { border-top: none; }
   .retailer { font-size: 12.5px; color: var(--text-secondary); }
-  .price { font-size: 16px; font-variant-numeric: tabular-nums; font-weight: 600; }
+  .retailer a { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--muted); }
+  .retailer a:hover { color: var(--text-primary); }
+  .retailer.own { color: var(--text-primary); font-weight: 600; }
+  .price { font-size: 16px; font-variant-numeric: tabular-nums; font-weight: 600; white-space: nowrap; }
   .price.lowest { color: var(--series-1); }
   .tag {
     display: inline-block;
@@ -114,8 +135,20 @@
   }
   .tag.lowest { background: color-mix(in srgb, var(--series-1) 16%, transparent); color: var(--series-1); }
   .tag.stale { background: color-mix(in srgb, var(--warning) 22%, transparent); color: #8a5a00; }
+  .tag.manual { background: color-mix(in srgb, var(--muted) 18%, transparent); color: var(--text-secondary); text-transform: none; letter-spacing: 0; font-weight: 500; }
+  .gap {
+    margin-top: 10px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-size: 12.5px;
+    line-height: 1.4;
+    background: color-mix(in srgb, var(--critical) 10%, transparent);
+    color: var(--critical);
+    font-weight: 600;
+  }
+  .gap.ok { background: color-mix(in srgb, var(--good) 10%, transparent); color: var(--good-text); }
   .no-competitor { color: var(--muted); font-size: 12px; padding-top: 8px; }
-  .card-foot { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--gridline); font-size: 11px; color: var(--muted); }
+  .card-foot { margin-top: auto; padding-top: 10px; font-size: 11px; color: var(--muted); }
   .card-foot a { color: inherit; }
 
   h2 { font-size: 16px; margin: 0 0 12px; }
@@ -138,7 +171,7 @@
   <header>
     <div>
       <h1>Wander &amp; Wake Price Watch</h1>
-      <p class="subtitle">Independently tracking product prices at wanderandwakestore.com against matched competitor listings. Not affiliated with Wander &amp; Wake.</p>
+      <p class="subtitle">Independently tracking product prices at wanderandwakestore.com against identical listings at other retailers, matched by manufacturer model number. Not affiliated with Wander &amp; Wake.</p>
     </div>
     <button id="theme-toggle" type="button">Toggle theme</button>
   </header>
@@ -148,15 +181,18 @@
     <span id="run-summary"></span>
   </div>
 
+  <div class="summary" id="summary"></div>
+
   <div class="grid" id="product-grid"></div>
 
   <h2>Recent price changes</h2>
   <div class="history" id="history-list"></div>
 
   <footer>
-    Prices are pulled directly from each store's own public product data on a schedule (see <code>.github/workflows/update-prices.yml</code>), not estimated or manually entered.
-    A store not updating here usually means its last scheduled check failed (flagged as <strong>stale</strong>) rather than a real price of zero — Price Watch never invents a price.
-    See this repository's README for how prices are checked and how to add more products.
+    Prices are pulled automatically from each store's own public product data on a schedule (see <code>.github/workflows/update-prices.yml</code>).
+    Retailers that block automated checks (Walmart, Newegg) are shown with a <strong>verified by hand</strong> label and the date the price was checked.
+    A source that failed its last automated check is flagged <strong>stale</strong> and keeps its last confirmed price — Price Watch never invents a price.
+    Every competitor listing is matched to the same manufacturer model number as the Wander &amp; Wake product; click a retailer name to open its listing.
   </footer>
 </div>
 
@@ -185,6 +221,7 @@
 
   const fmt = new Intl.NumberFormat("en-US", { style: "currency", currency: "USD" });
   function money(n) { return typeof n === "number" ? fmt.format(n) : "—"; }
+  function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
   function timeAgo(iso) {
     if (!iso) return "never";
     const diffMs = Date.now() - new Date(iso).getTime();
@@ -195,20 +232,50 @@
     if (hrs < 24) return hrs + " hr ago";
     return Math.round(hrs / 24) + " d ago";
   }
+  function shortDate(iso) {
+    if (!iso) return "";
+    return new Date(iso).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+  }
+
+  // Compare Wander & Wake's lowest price with the lowest competitor price.
+  function gapFor(p) {
+    if (!p.own || typeof p.own.price_min !== "number") return null;
+    const comps = Object.values(p.competitors || {}).filter(c => typeof c.price_min === "number");
+    if (!comps.length) return null;
+    const best = comps.reduce((a, b) => (b.price_min < a.price_min ? b : a));
+    const diff = p.own.price_min - best.price_min;
+    return { best, diff, pct: diff / p.own.price_min * 100 };
+  }
+
+  function renderSummary(products) {
+    const el = document.getElementById("summary");
+    const gaps = products.map(gapFor).filter(Boolean);
+    if (!gaps.length) { el.innerHTML = ""; return; }
+    const undercut = gaps.filter(g => g.diff > 0);
+    const avgPct = undercut.length ? undercut.reduce((s, g) => s + g.pct, 0) / undercut.length : 0;
+    const totalDiff = undercut.reduce((s, g) => s + g.diff, 0);
+    el.innerHTML = `
+      <div class="stat"><div class="label">Products undercut by a competitor</div><div class="value${undercut.length ? " bad" : ""}">${undercut.length} of ${gaps.length}</div></div>
+      <div class="stat"><div class="label">Average amount above lowest price</div><div class="value${undercut.length ? " bad" : ""}">${avgPct.toFixed(0)}%</div></div>
+      <div class="stat"><div class="label">Extra cost buying one of each at Wander &amp; Wake</div><div class="value${undercut.length ? " bad" : ""}">${money(totalDiff)}</div></div>`;
+  }
 
   function renderProducts(snapshot) {
     const grid = document.getElementById("product-grid");
     grid.innerHTML = "";
     const products = Object.values(snapshot.products || {});
-    products.sort((a, b) => a.name.localeCompare(b.name));
+    // Biggest percentage gap first, so the clearest cases lead.
+    products.sort((a, b) => ((gapFor(b) || { pct: -1e9 }).pct) - ((gapFor(a) || { pct: -1e9 }).pct));
+    renderSummary(products);
 
     for (const p of products) {
       const card = document.createElement("div");
       card.className = "card";
 
       const listings = [];
-      if (p.own) listings.push(p.own);
-      for (const key in (p.competitors || {})) listings.push(p.competitors[key]);
+      if (p.own) listings.push(Object.assign({ _own: true }, p.own));
+      const comps = Object.values(p.competitors || {}).slice().sort((a, b) => a.price_min - b.price_min);
+      for (const c of comps) listings.push(c);
       const validPrices = listings.filter(l => typeof l.price_min === "number").map(l => l.price_min);
       const lowest = validPrices.length ? Math.min(...validPrices) : null;
 
@@ -216,20 +283,32 @@
       for (const l of listings) {
         const isLowest = lowest !== null && l.price_min === lowest && validPrices.length > 1;
         const priceText = l.price_min === l.price_max ? money(l.price_min) : money(l.price_min) + "–" + money(l.price_max);
+        const name = l.product_page
+          ? `<a href="${esc(l.product_page)}" target="_blank" rel="noopener" title="${esc(l.match_note || "")}">${esc(l.retailer)}</a>`
+          : esc(l.retailer);
+        const tags =
+          (l.stale ? '<span class="tag stale">stale</span>' : "") +
+          (l.manual ? `<span class="tag manual">verified by hand ${esc(shortDate(l.checked_at))}</span>` : "");
         rows += `<div class="price-row">
-          <span class="retailer">${l.retailer}${l.stale ? '<span class="tag stale">stale</span>' : ''}</span>
-          <span class="price${isLowest ? ' lowest' : ''}">${priceText}${isLowest ? '<span class="tag lowest">lowest</span>' : ''}</span>
+          <span class="retailer${l._own ? " own" : ""}">${name}${tags}</span>
+          <span class="price${isLowest ? " lowest" : ""}">${priceText}${isLowest ? '<span class="tag lowest">lowest</span>' : ""}</span>
         </div>`;
       }
-      if (!p.competitors || Object.keys(p.competitors).length === 0) {
+
+      const g = gapFor(p);
+      if (!g) {
         rows += `<div class="no-competitor">No confirmed competitor match tracked yet for this product.</div>`;
+      } else if (g.diff > 0) {
+        rows += `<div class="gap">Wander &amp; Wake is ${money(g.diff)} (${g.pct.toFixed(0)}%) above ${esc(g.best.retailer)}</div>`;
+      } else {
+        rows += `<div class="gap ok">Wander &amp; Wake matches or beats every tracked competitor</div>`;
       }
 
       const checkedAt = p.own ? p.own.checked_at : null;
       card.innerHTML = `
-        <h3>${p.name}</h3>
+        <h3>${esc(p.name)}</h3>
         ${rows}
-        <div class="card-foot">Checked ${timeAgo(checkedAt)}${p.own && p.own.product_page ? ' · <a href="' + p.own.product_page + '" target="_blank" rel="noopener">view listing</a>' : ''}</div>
+        <div class="card-foot">Checked ${timeAgo(checkedAt)}</div>
       `;
       grid.appendChild(card);
     }
@@ -255,7 +334,7 @@
       row.className = "history-row";
       row.innerHTML = `
         <span class="when">${timeAgo(ev.at)}</span>
-        <span class="what">${ev.product_name} — ${ev.retailer}</span>
+        <span class="what">${esc(ev.product_name)} — ${esc(ev.retailer)}</span>
         <span class="delta ${direction}">${arrow} ${money(ev.old_price)} → ${money(ev.new_price)}</span>
       `;
       list.appendChild(row);
@@ -263,11 +342,9 @@
   }
 
   function renderMeta(snapshot, lastRun) {
-    const dot = document.getElementById("freshness-dot");
     const stale = Object.values(snapshot.products || {}).some(p =>
       (p.own && p.own.stale) || Object.values(p.competitors || {}).some(c => c.stale)
     );
-    dot.className = "dot" + (stale ? " stale" : "");
     document.getElementById("last-updated").innerHTML =
       '<span class="dot' + (stale ? ' stale' : '') + '"></span>Last checked ' + timeAgo(snapshot.generated_at) +
       (stale ? " — some sources failed their last check (flagged below)" : "");

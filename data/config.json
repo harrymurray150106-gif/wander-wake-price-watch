@@ -22,6 +22,13 @@
           "url": "https://www.upnorthsports.com/products/wow-sports-feel-good-child-life-vest.json",
           "product_page": "https://www.upnorthsports.com/products/wow-sports-feel-good-child-life-vest",
           "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827)."
+        },
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/the-feel-good-child-life-vest-1.json",
+          "product_page": "https://wowsports.com/products/the-feel-good-child-life-vest-1",
+          "match_note": "Manufacturer's own store — identical model 23-WLV-4827."
         }
       ]
     },
@@ -34,7 +41,22 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-12v-dc-inflator-pump-for-inflatables-and-towables.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-12v-dc-inflator-pump-for-inflatables-and-towables"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "Up North Sports",
+          "type": "shopify_json",
+          "url": "https://www.upnorthsports.com/products/wow-sports-12v-dc-electric-inflator-pump.json",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-12v-dc-electric-inflator-pump",
+          "match_note": "Confirmed same product — shared SKU core 4020 (W&W: 13-4020-WOW, Up North: WOW13-4020)."
+        },
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/12v-dc-electric-inflator-pump.json",
+          "product_page": "https://wowsports.com/products/12v-dc-electric-inflator-pump",
+          "match_note": "Manufacturer's own store — identical model 13-4020."
+        }
+      ]
     },
     {
       "id": "wow-wakesurf-rope-25",
@@ -45,7 +67,23 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-25ft-4-section-wakesurf-rope.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-25ft-4-section-wakesurf-rope"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/25-4-section-wakesurf-rope.json",
+          "product_page": "https://wowsports.com/products/25-4-section-wakesurf-rope",
+          "match_note": "Manufacturer's own store — identical model 22-WRP-4612."
+        },
+        {
+          "retailer": "Walmart",
+          "type": "manual",
+          "price": 54.99,
+          "verified_at": "2026-10-05T15:30:00Z",
+          "product_page": "https://www.walmart.com/ip/WOW-Sports-25-Towing-Rope-for-Wakesurf-and-Watersports-4-Section-Rope-25/2754361616",
+          "match_note": "Listing page names model 22-WRP-4612; sold by WOW Sports. Walmart blocks automated checks, so this price was verified by hand."
+        }
+      ]
     },
     {
       "id": "wow-saddle-seat",
@@ -56,7 +94,22 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-saddle-seat.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-saddle-seat"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/vacation-mode-saddle-seats.json",
+          "product_page": "https://wowsports.com/products/vacation-mode-saddle-seats",
+          "match_note": "Manufacturer's own store — identical models 24-WFO-5670/5671/5672."
+        },
+        {
+          "retailer": "Overton's",
+          "type": "html_jsonld",
+          "url": "https://www.overtons.com/wow-molded-foam-aqua-saddle-seat-370733.html",
+          "product_page": "https://www.overtons.com/wow-molded-foam-aqua-saddle-seat-370733.html",
+          "match_note": "Listing page names model 24-WFO-5670 (blue)."
+        }
+      ]
     },
     {
       "id": "wow-pool-noodle",
@@ -67,7 +120,15 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-pool-noodle.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-vacation-mode-molded-foam-pool-noodle"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/vacation-mode-pool-noodle.json",
+          "product_page": "https://wowsports.com/products/vacation-mode-pool-noodle",
+          "match_note": "Manufacturer's own store — identical models 24-WFO-5667/5668/5669."
+        }
+      ]
     },
     {
       "id": "wow-vis-wave-adult",
@@ -85,6 +146,13 @@
           "url": "https://www.upnorthsports.com/products/wow-sports-vis-wave-adult-life-vest.json",
           "product_page": "https://www.upnorthsports.com/products/wow-sports-vis-wave-adult-life-vest",
           "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores."
+        },
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/var-6933.json",
+          "product_page": "https://wowsports.com/products/var-6933",
+          "match_note": "Manufacturer's own store — identical models 24-WLV-5636/5637/5638/5927."
         }
       ]
     },
@@ -97,7 +165,22 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-inflatable-lounging-resort-island-for-6-8-people.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-inflatable-lounging-resort-island-for-6-8-people"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/the-wow-resort-island.json",
+          "product_page": "https://wowsports.com/products/the-wow-resort-island",
+          "match_note": "Manufacturer's own store — identical model 23-WIL-4759."
+        },
+        {
+          "retailer": "Overton's",
+          "type": "html_jsonld",
+          "url": "https://www.overtons.com/wow-resort-island-384328.html",
+          "product_page": "https://www.overtons.com/wow-resort-island-384328.html",
+          "match_note": "Listing page names model 23-WIL-4759."
+        }
+      ]
     },
     {
       "id": "wow-ski-rope-75",
@@ -108,7 +191,23 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-75ft-2-section-uv-treated-water-ski-rope.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-75ft-2-section-uv-treated-water-ski-rope"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/75-2-section-watersports-rope.json",
+          "product_page": "https://wowsports.com/products/75-2-section-watersports-rope",
+          "match_note": "Manufacturer's own store — identical model 22-WRP-4603."
+        },
+        {
+          "retailer": "Newegg (JupiterGear)",
+          "type": "manual",
+          "price": 49.99,
+          "verified_at": "2026-10-05T15:30:00Z",
+          "product_page": "https://www.newegg.com/p/0JK-01NG-00015",
+          "match_note": "Listing names model 22-WRP-4603, UPC 04897034348118. Newegg blocks automated checks, so this price was verified by hand."
+        }
+      ]
     },
     {
       "id": "wow-water-walkway",
@@ -119,7 +218,22 @@
         "url": "https://wanderandwakestore.com/products/wow-watersports-floating-water-mat-for-the-pool-and-lake.json",
         "product_page": "https://wanderandwakestore.com/products/wow-watersports-floating-water-mat-for-the-pool-and-lake"
       },
-      "competitors": []
+      "competitors": [
+        {
+          "retailer": "Up North Sports",
+          "type": "shopify_json",
+          "url": "https://www.upnorthsports.com/products/wow-sports-water-mat-6-x-6-ft.json",
+          "product_page": "https://www.upnorthsports.com/products/wow-sports-water-mat-6-x-6-ft",
+          "match_note": "Confirmed same product — shared SKU core 2080 (W&W: 14-2080-WOW, Up North: WOW14-2080)."
+        },
+        {
+          "retailer": "WOW Sports (official store)",
+          "type": "shopify_json",
+          "url": "https://wowsports.com/products/water-mat-6x6-ft.json",
+          "product_page": "https://wowsports.com/products/water-mat-6x6-ft",
+          "match_note": "Manufacturer's own store — identical model 14-2080."
+        }
+      ]
     }
   ]
 }

@@ -10,7 +10,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:36Z",
+        "checked_at": "2026-10-05T16:54:27Z",
         "stale": false
       },
       "competitors": {
@@ -21,7 +21,7 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:36Z",
+          "checked_at": "2026-10-05T16:54:27Z",
           "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827).",
           "manual": false,
           "stale": false
@@ -33,7 +33,7 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:36Z",
+          "checked_at": "2026-10-05T16:54:27Z",
           "match_note": "Manufacturer's own store — identical model 23-WLV-4827.",
           "manual": false,
           "stale": false
@@ -50,7 +50,7 @@
         "price_max": 49.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:37Z",
+        "checked_at": "2026-10-05T16:54:27Z",
         "stale": false
       },
       "competitors": {
@@ -61,7 +61,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:37Z",
+          "checked_at": "2026-10-05T16:54:28Z",
           "match_note": "Confirmed same product — shared SKU core 4020 (W&W: 13-4020-WOW, Up North: WOW13-4020).",
           "manual": false,
           "stale": false
@@ -73,7 +73,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:37Z",
+          "checked_at": "2026-10-05T16:54:28Z",
           "match_note": "Manufacturer's own store — identical model 13-4020.",
           "manual": false,
           "stale": false
@@ -90,7 +90,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:37Z",
+        "checked_at": "2026-10-05T16:54:28Z",
         "stale": false
       },
       "competitors": {
@@ -101,7 +101,7 @@
           "price_max": 54.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:38Z",
+          "checked_at": "2026-10-05T16:54:28Z",
           "match_note": "Manufacturer's own store — identical model 22-WRP-4612.",
           "manual": false,
           "stale": false
@@ -130,7 +130,7 @@
         "price_max": 52.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:38Z",
+        "checked_at": "2026-10-05T16:54:28Z",
         "stale": false
       },
       "competitors": {
@@ -141,7 +141,7 @@
           "price_max": 29.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:38Z",
+          "checked_at": "2026-10-05T16:54:29Z",
           "match_note": "Manufacturer's own store — identical models 24-WFO-5670/5671/5672.",
           "manual": false,
           "stale": false
@@ -153,7 +153,7 @@
           "price_max": 29.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:39Z",
+          "checked_at": "2026-10-05T16:54:30Z",
           "match_note": "Listing page names model 24-WFO-5670 (blue).",
           "manual": false,
           "stale": false
@@ -170,7 +170,7 @@
         "price_max": 49.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:39Z",
+        "checked_at": "2026-10-05T16:54:30Z",
         "stale": false
       },
       "competitors": {
@@ -181,7 +181,7 @@
           "price_max": 19.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:39Z",
+          "checked_at": "2026-10-05T16:54:30Z",
           "match_note": "Manufacturer's own store — identical models 24-WFO-5667/5668/5669.",
           "manual": false,
           "stale": false
@@ -198,7 +198,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:40Z",
+        "checked_at": "2026-10-05T16:54:30Z",
         "stale": false
       },
       "competitors": {
@@ -209,7 +209,7 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:40Z",
+          "checked_at": "2026-10-05T16:54:30Z",
           "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores.",
           "manual": false,
           "stale": false
@@ -221,7 +221,7 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:40Z",
+          "checked_at": "2026-10-05T16:54:31Z",
           "match_note": "Manufacturer's own store — identical models 24-WLV-5636/5637/5638/5927.",
           "manual": false,
           "stale": false
@@ -238,7 +238,7 @@
         "price_max": 329.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:40Z",
+        "checked_at": "2026-10-05T16:54:31Z",
         "stale": false
       },
       "competitors": {
@@ -249,7 +249,7 @@
           "price_max": 247.49,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:40Z",
+          "checked_at": "2026-10-05T16:54:31Z",
           "match_note": "Manufacturer's own store — identical model 23-WIL-4759.",
           "manual": false,
           "stale": false
@@ -261,7 +261,7 @@
           "price_max": 299.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:41Z",
+          "checked_at": "2026-10-05T16:54:32Z",
           "match_note": "Listing page names model 23-WIL-4759.",
           "manual": false,
           "stale": false
@@ -278,7 +278,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:41Z",
+        "checked_at": "2026-10-05T16:54:32Z",
         "stale": false
       },
       "competitors": {
@@ -289,7 +289,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:41Z",
+          "checked_at": "2026-10-05T16:54:32Z",
           "match_note": "Manufacturer's own store — identical model 22-WRP-4603.",
           "manual": false,
           "stale": false
@@ -318,7 +318,7 @@
         "price_max": 169.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-05T16:25:42Z",
+        "checked_at": "2026-10-05T16:54:32Z",
         "stale": false
       },
       "competitors": {
@@ -329,7 +329,7 @@
           "price_max": 164.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:42Z",
+          "checked_at": "2026-10-05T16:54:32Z",
           "match_note": "Confirmed same product — shared SKU core 2080 (W&W: 14-2080-WOW, Up North: WOW14-2080).",
           "manual": false,
           "stale": false
@@ -341,13 +341,293 @@
           "price_max": 99.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-05T16:25:42Z",
+          "checked_at": "2026-10-05T16:54:33Z",
           "match_note": "Manufacturer's own store — identical model 14-2080.",
           "manual": false,
           "stale": false
         }
       }
+    },
+    "hoto-wand": {
+      "id": "hoto-wand",
+      "name": "HOTO Wand Cordless Spin Scrubber",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/hoto-wand%E2%84%A2-cordless-spin-scrubber",
+        "price_min": 59.99,
+        "price_max": 59.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:33Z",
+        "stale": false
+      },
+      "competitors": {
+        "HOTO (official store)": {
+          "retailer": "HOTO (official store)",
+          "product_page": "https://www.hototools.com/products/hoto-wand-cordless-spin-scrubber",
+          "price_min": 34.99,
+          "price_max": 34.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:54:33Z",
+          "match_note": "Manufacturer's own store — identical SKU QWQJA07.",
+          "manual": false,
+          "stale": false
+        }
+      }
+    },
+    "umbrauto-short-mattress": {
+      "id": "umbrauto-short-mattress",
+      "name": "Umbrauto Short Bed Truck Air Mattress (5.5–5.8 ft)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-teal",
+        "price_min": 117.95,
+        "price_max": 117.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:33Z",
+        "stale": false
+      },
+      "competitors": {
+        "Umbrauto (official store)": {
+          "retailer": "Umbrauto (official store)",
+          "product_page": "https://umbrauto.com/products/umbrauto-5-5-5-8-ft-short-truck-bed-air-mattress-1-0-blue-oae",
+          "price_min": 87.99,
+          "price_max": 87.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:54:34Z",
+          "match_note": "Manufacturer's own store — identical SKU AIR-PICKUP-ZQG.",
+          "manual": false,
+          "stale": false
+        }
+      }
+    },
+    "umbrauto-tent-awning": {
+      "id": "umbrauto-tent-awning",
+      "name": "Umbrauto Truck Bed Tent with Awning (5.5–5.8 ft)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-truck-bed-tent-with-awning-fits-5-5-5-8-ft-truck-beds-pu3000mm-waterproof-pickup-tent",
+        "price_min": 179.95,
+        "price_max": 179.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:34Z",
+        "stale": false
+      },
+      "competitors": {
+        "Umbrauto (official store)": {
+          "retailer": "Umbrauto (official store)",
+          "product_page": "https://umbrauto.com/products/umbrauto-5-5-5-8-pu3000mm-waterproof-truck-bed-tent-with-awning",
+          "price_min": 149.99,
+          "price_max": 149.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:54:34Z",
+          "match_note": "Manufacturer's own store — identical SKUs PKT201/202/203/205-5558W.",
+          "manual": false,
+          "stale": false
+        }
+      }
+    },
+    "umbrauto-camper-cover": {
+      "id": "umbrauto-camper-cover",
+      "name": "Umbrauto Pop-Up Camper Cover",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents",
+        "price_min": 149.95,
+        "price_max": 209.95,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:34Z",
+        "stale": false
+      },
+      "competitors": {
+        "Umbrauto (official store)": {
+          "retailer": "Umbrauto (official store)",
+          "product_page": "https://umbrauto.com/products/umbrauto-pop-up-camper-cover-folding-tent-trailers-300d-silver-oxford-waterproof-windproof-sun-resistant-tear-resistant-heavy-duty-rv-cover-with-straps-air-vents",
+          "price_min": 119.99,
+          "price_max": 179.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:54:34Z",
+          "match_note": "Manufacturer's own store — identical SKUs RV9005-0810 to RV9005-1820, same sizes.",
+          "manual": false,
+          "stale": false
+        }
+      }
+    },
+    "rockbros-cooler": {
+      "id": "rockbros-cooler",
+      "name": "ROCKBROS 22L Soft Cooler Bag",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/rockbros-22l-leakproof-soft-cooler-bag-waterproof-insulation-multiple-carrier-ways-anti-spill-design",
+        "price_min": 179.0,
+        "price_max": 179.0,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B08BYGW424",
+          "price_min": 109.99,
+          "price_max": 109.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B08BYGW424 — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
+    },
+    "eygde-surge": {
+      "id": "eygde-surge",
+      "name": "EYGDE 50 Amp RV Surge Protector",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/eygde-rv-surge-protector-50-amp-waterproof-smart-50-amp-surge-protectors-for-rv-with-real-time-kwh-voltage-monitor-surge-protector-for-camper-travel-trailerorange-50a",
+        "price_min": 481.24,
+        "price_max": 481.24,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B0D2HLD69N",
+          "price_min": 109.99,
+          "price_max": 109.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0D2HLD69N — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
+    },
+    "addsafety-nav-light": {
+      "id": "addsafety-nav-light",
+      "name": "AddSafety 5 ft LED Boat Navigation Light",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/addsafety-5ft-nav-lights-for-boat-plug-in-base-boat-whip-light-chasing-color-boat-navigation-light-with-remote-control-led-boat-light-anchor-boat-accessories",
+        "price_min": 393.07,
+        "price_max": 393.07,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B0BC1K4K65",
+          "price_min": 105.99,
+          "price_max": 105.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0BC1K4K65 — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
+    },
+    "ayaport-straps": {
+      "id": "ayaport-straps",
+      "name": "AYAPORT Boat Trailer Tie-Down Straps (2-Pack)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/ayaport-boat-tie-down-straps-to-trailer-stainless-steel-ratchet-5-feet-4400lbs-break-strength-heavy-duty-ratchet-boat-straps-boat-transom-straps-boat-trailer-accessories-for-boating-safety",
+        "price_min": 65.99,
+        "price_max": 65.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B0D4YRXDYK",
+          "price_min": 47.91,
+          "price_max": 47.91,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0D4YRXDYK — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
+    },
+    "lanedo-cooler": {
+      "id": "lanedo-cooler",
+      "name": "Lanedo 20-Can Soft Cooler Bag",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/lanedo-lunch-soft-cooler-20-can-soft-carrying-handle-insulated-bag-portable-ice-chest-box-for-lunch-beach-drink-beverage-travel-camping-picnic-car-trips-cooler-leak-proof-orange",
+        "price_min": 89.98,
+        "price_max": 89.98,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B0C3CT2B6B",
+          "price_min": 24.99,
+          "price_max": 24.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B0C3CT2B6B — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
+    },
+    "allerpet": {
+      "id": "allerpet",
+      "name": "Allerpet Pet Dander Remover (12 oz)",
+      "own": {
+        "retailer": "Wander & Wake",
+        "product_page": "https://wanderandwakestore.com/products/allerpet-pet-12-oz",
+        "price_min": 39.99,
+        "price_max": 39.99,
+        "currency": "USD",
+        "available": null,
+        "checked_at": "2026-10-05T16:54:35Z",
+        "stale": false
+      },
+      "competitors": {
+        "Amazon": {
+          "retailer": "Amazon",
+          "product_page": "https://www.amazon.com/dp/B011O35WCM",
+          "price_min": 17.99,
+          "price_max": 17.99,
+          "currency": "USD",
+          "available": null,
+          "checked_at": "2026-10-05T16:55:00Z",
+          "match_note": "Wander & Wake's own SKU for this product is the Amazon ID B011O35WCM — same listing. Amazon blocks automated checks, so this price was verified by hand.",
+          "manual": true,
+          "stale": false
+        }
+      }
     }
   },
-  "generated_at": "2026-10-05T16:25:42Z"
+  "generated_at": "2026-10-05T16:54:35Z"
 }

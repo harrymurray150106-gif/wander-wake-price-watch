@@ -5,23 +5,27 @@ Wander & Wake Price Watch — price checker.
 Runs on a schedule via GitHub Actions (see .github/workflows/update-prices.yml).
 Each run:
   1. Reads data/config.json (the list of tracked products + competitor URLs).
-  2. Fetches the current price/stock for each product's own listing and any
-     mapped competitor listings, using each store's public Shopify
-     storefront JSON endpoint (the same data the store's own site uses —
-     no scraping of rendered HTML, no API keys required).
+  2. Fetches the current price for each product's own listing and every
+     mapped competitor listing. Supported source types:
+       - shopify_json: a Shopify store's public /products/<handle>.json feed
+         (the same data the store's own site uses).
+       - html_jsonld:  a normal product page that publishes its price as
+         schema.org JSON-LD (used by Overton's and many other retailers).
+       - manual:       a price verified by hand and stored in config.json,
+         for retailers that block automated checks (Walmart, Newegg).
+         These are never refreshed automatically and are always labelled
+         "verified by hand" with their verification date on the dashboard.
   3. Compares against the last snapshot (data/snapshot.json). Any price
      that changed is appended to data/history.json as a dated event.
   4. Writes the new snapshot + a data/last_run.json status file.
   5. Also does a light "new product" sweep of Wander & Wake's product
-     sitemap, so newly listed products get flagged for someone to review
-     and (optionally) add to config.json later.
+     sitemap, so newly listed products get flagged for someone to review.
 
-This script is deliberately dependency-light (just `requests`) and
-tolerant of individual failures: if one URL fails (timeout, 404, site
-blocks the request that run, etc.) the rest of the run still completes,
-and the failure is recorded rather than silently dropped or guessed at.
-Nothing here ever invents a price — a failed fetch leaves the previous
-known value untouched and is flagged as stale instead.
+Standard library only. Tolerant of individual failures: if one URL fails
+(timeout, 404, site blocks the request that run, etc.) the rest of the run
+still completes, and the failure is recorded rather than silently dropped
+or guessed at. Nothing here ever invents a price — a failed fetch leaves
+the previous known value untouched and flags it as stale instead.
 """
 
 import json
@@ -71,13 +75,17 @@ def save_json(path, data):
         f.write("\n")
 
 
-def fetch(url):
+def fetch(url, accept="application/json, text/xml, */*"):
     """GET a URL with a browser-like User-Agent, retrying a few times.
     Returns (bytes_or_None, error_message_or_None)."""
     last_err = None
     for attempt in range(1, MAX_RETRIES + 1):
         try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json, text/xml, */*"})
+            req = urllib.request.Request(url, headers={
+                "User-Agent": USER_AGENT,
+                "Accept": accept,
+                "Accept-Language": "en-US,en;q=0.9",
+            })
             with urllib.request.urlopen(req, timeout=TIMEOUT_SECONDS) as resp:
                 return resp.read(), None
         except urllib.error.HTTPError as e:
@@ -86,7 +94,7 @@ def fetch(url):
                 time.sleep(RETRY_BACKOFF_SECONDS * attempt)
                 continue
             break
-        except Exception as e:  # noqa: BLE001 - we want to record any failure, not crash the run
+        except Exception as e:  # noqa: BLE001 - record any failure, don't crash the run
             last_err = str(e)
             if attempt < MAX_RETRIES:
                 time.sleep(RETRY_BACKOFF_SECONDS * attempt)
@@ -95,10 +103,10 @@ def fetch(url):
     return None, last_err
 
 
-def fetch_shopify_json_price(url):
+def fetch_shopify_json_price(listing):
     """Fetch a Shopify /products/<handle>.json endpoint and return a
     normalised price record, or an error."""
-    raw, err = fetch(url)
+    raw, err = fetch(listing["url"])
     if err:
         return None, err
     try:
@@ -135,8 +143,74 @@ def fetch_shopify_json_price(url):
     }, None
 
 
+def _collect_offer_prices(node, out):
+    """Walk parsed JSON-LD and collect every Offer price found."""
+    if isinstance(node, list):
+        for item in node:
+            _collect_offer_prices(item, out)
+        return
+    if not isinstance(node, dict):
+        return
+    for key in ("price", "lowPrice"):
+        if key in node:
+            try:
+                out.append(float(str(node[key]).replace(",", "")))
+            except (TypeError, ValueError):
+                pass
+    for value in node.values():
+        if isinstance(value, (dict, list)):
+            _collect_offer_prices(value, out)
+
+
+def fetch_html_jsonld_price(listing):
+    """Fetch a normal product page and read its schema.org JSON-LD price."""
+    raw, err = fetch(listing["url"], accept="text/html,application/xhtml+xml,*/*;q=0.8")
+    if err:
+        return None, err
+    html = raw.decode("utf-8", errors="replace")
+    blocks = re.findall(
+        r'<script[^>]+type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',
+        html, flags=re.DOTALL | re.IGNORECASE,
+    )
+    prices = []
+    for block in blocks:
+        try:
+            _collect_offer_prices(json.loads(block.strip()), prices)
+        except Exception:  # noqa: BLE001 - one malformed block shouldn't sink the page
+            continue
+    prices = [p for p in prices if p > 0]
+    if not prices:
+        return None, "no JSON-LD price found on page (page layout may have changed, or the request was blocked)"
+    return {
+        "price_min": min(prices),
+        "price_max": max(prices),
+        "currency": "USD",
+        "available": None,
+        "checked_at": now_iso(),
+    }, None
+
+
+def manual_price(listing):
+    """A price verified by hand and stored in config.json. Never refreshed
+    automatically; the dashboard shows it with its verification date."""
+    try:
+        price = float(listing["price"])
+    except (KeyError, TypeError, ValueError):
+        return None, "manual listing is missing a valid price"
+    return {
+        "price_min": price,
+        "price_max": price,
+        "currency": "USD",
+        "available": None,
+        "checked_at": listing.get("verified_at"),
+        "manual": True,
+    }, None
+
+
 FETCHERS = {
     "shopify_json": fetch_shopify_json_price,
+    "html_jsonld": fetch_html_jsonld_price,
+    "manual": manual_price,
 }
 
 
@@ -144,7 +218,7 @@ def fetch_listing(listing):
     fetcher = FETCHERS.get(listing.get("type"))
     if fetcher is None:
         return None, f"unsupported source type: {listing.get('type')}"
-    return fetcher(listing["url"])
+    return fetcher(listing)
 
 
 def check_products(config):
@@ -155,11 +229,13 @@ def check_products(config):
     for product in config["products"]:
         pid = product["id"]
         prev = snapshot["products"].get(pid, {})
+        configured = {c["retailer"] for c in product.get("competitors", [])}
         entry = {
             "id": pid,
             "name": product["name"],
             "own": prev.get("own"),
-            "competitors": dict(prev.get("competitors", {})),
+            # Only keep competitors still listed in config.json.
+            "competitors": {k: v for k, v in (prev.get("competitors") or {}).items() if k in configured},
         }
 
         # --- own price ---
@@ -217,6 +293,7 @@ def check_products(config):
                 "available": comp_result["available"],
                 "checked_at": comp_result["checked_at"],
                 "match_note": comp.get("match_note"),
+                "manual": bool(comp_result.get("manual")),
                 "stale": False,
             }
             old_price = (prev_comp or {}).get("price_min")
@@ -235,9 +312,13 @@ def check_products(config):
 
         snapshot["products"][pid] = entry
 
+    # Drop products no longer listed in config.json.
+    configured_ids = {p["id"] for p in config["products"]}
+    snapshot["products"] = {k: v for k, v in snapshot["products"].items() if k in configured_ids}
+    snapshot.pop("seed_note", None)
     snapshot["generated_at"] = now_iso()
     save_json(SNAPSHOT_PATH, snapshot)
-    # Keep history from growing forever unbounded in a public repo; retain most recent 2000 events.
+    # Keep history from growing forever in a public repo; retain most recent 2000 events.
     save_json(HISTORY_PATH, history[-2000:])
     return run_log
 
@@ -245,9 +326,7 @@ def check_products(config):
 def sweep_for_new_products(run_log):
     """Light-touch new-product detection: diff the store's product sitemap
     against the list of URLs we've already seen, and record anything new
-    for a human (or a future run) to triage. Never auto-creates tracked
-    products — we don't have confirmed competitor matches for anything we
-    haven't researched."""
+    for a human to triage. Never auto-creates tracked products."""
     is_first_run = not os.path.exists(KNOWN_URLS_PATH)
     known = load_json(KNOWN_URLS_PATH, {})
     discovered = load_json(DISCOVERED_PATH, [])
@@ -275,8 +354,7 @@ def sweep_for_new_products(run_log):
             found_urls.append(loc)
 
     if is_first_run:
-        # Baseline seed: everything currently in the sitemap is "already known",
-        # not a fresh discovery. Only URLs that show up in *later* runs are new.
+        # Baseline seed: everything currently in the sitemap is "already known".
         for url in found_urls:
             known[url] = {"first_seen": now_iso()}
         save_json(KNOWN_URLS_PATH, known)

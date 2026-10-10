@@ -10,7 +10,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:08Z",
+        "checked_at": "2026-10-10T02:46:46Z",
         "stale": false
       },
       "competitors": {
@@ -21,7 +21,7 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:08Z",
+          "checked_at": "2026-10-10T02:46:46Z",
           "match_note": "Confirmed same product — shared SKU core 4827 (W&W: 23-WLV-4827-WOW, Up North: WOW23-WLV-4827).",
           "manual": false,
           "stale": false
@@ -33,7 +33,7 @@
           "price_max": 69.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:08Z",
+          "checked_at": "2026-10-10T02:46:46Z",
           "match_note": "Manufacturer's own store — identical model 23-WLV-4827.",
           "manual": false,
           "stale": false
@@ -50,7 +50,7 @@
         "price_max": 49.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:09Z",
+        "checked_at": "2026-10-10T02:46:46Z",
         "stale": false
       },
       "competitors": {
@@ -61,7 +61,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:09Z",
+          "checked_at": "2026-10-10T02:46:46Z",
           "match_note": "Confirmed same product — shared SKU core 4020 (W&W: 13-4020-WOW, Up North: WOW13-4020).",
           "manual": false,
           "stale": false
@@ -73,7 +73,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:09Z",
+          "checked_at": "2026-10-10T02:46:47Z",
           "match_note": "Manufacturer's own store — identical model 13-4020.",
           "manual": false,
           "stale": false
@@ -90,7 +90,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:10Z",
+        "checked_at": "2026-10-10T02:46:47Z",
         "stale": false
       },
       "competitors": {
@@ -101,7 +101,7 @@
           "price_max": 54.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:10Z",
+          "checked_at": "2026-10-10T02:46:47Z",
           "match_note": "Manufacturer's own store — identical model 22-WRP-4612.",
           "manual": false,
           "stale": false
@@ -130,7 +130,7 @@
         "price_max": 52.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:10Z",
+        "checked_at": "2026-10-10T02:46:47Z",
         "stale": false
       },
       "competitors": {
@@ -141,7 +141,7 @@
           "price_max": 29.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:10Z",
+          "checked_at": "2026-10-10T02:46:47Z",
           "match_note": "Manufacturer's own store — identical models 24-WFO-5670/5671/5672.",
           "manual": false,
           "stale": false
@@ -153,7 +153,7 @@
           "price_max": 29.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:11Z",
+          "checked_at": "2026-10-10T02:46:48Z",
           "match_note": "Listing page names model 24-WFO-5670 (blue).",
           "manual": false,
           "stale": false
@@ -170,7 +170,7 @@
         "price_max": 49.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:12Z",
+        "checked_at": "2026-10-10T02:46:48Z",
         "stale": false
       },
       "competitors": {
@@ -181,7 +181,7 @@
           "price_max": 19.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:12Z",
+          "checked_at": "2026-10-10T02:46:48Z",
           "match_note": "Manufacturer's own store — identical models 24-WFO-5667/5668/5669.",
           "manual": false,
           "stale": false
@@ -198,7 +198,7 @@
         "price_max": 79.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:13Z",
+        "checked_at": "2026-10-10T02:46:48Z",
         "stale": false
       },
       "competitors": {
@@ -209,7 +209,7 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:13Z",
+          "checked_at": "2026-10-10T02:46:49Z",
           "match_note": "Confirmed same product — shared SKU cores 5636/5637/5638/5927 across both stores.",
           "manual": false,
           "stale": false
@@ -221,7 +221,7 @@
           "price_max": 59.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:13Z",
+          "checked_at": "2026-10-10T02:46:49Z",
           "match_note": "Manufacturer's own store — identical models 24-WLV-5636/5637/5638/5927.",
           "manual": false,
           "stale": false
@@ -238,7 +238,7 @@
         "price_max": 329.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:14Z",
+        "checked_at": "2026-10-10T02:46:49Z",
         "stale": false
       },
       "competitors": {
@@ -249,7 +249,7 @@
           "price_max": 247.49,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:14Z",
+          "checked_at": "2026-10-10T02:46:49Z",
           "match_note": "Manufacturer's own store — identical model 23-WIL-4759.",
           "manual": false,
           "stale": false
@@ -261,7 +261,7 @@
           "price_max": 299.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:15Z",
+          "checked_at": "2026-10-10T02:46:50Z",
           "match_note": "Listing page names model 23-WIL-4759.",
           "manual": false,
           "stale": false
@@ -278,7 +278,7 @@
         "price_max": 64.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:15Z",
+        "checked_at": "2026-10-10T02:46:50Z",
         "stale": false
       },
       "competitors": {
@@ -289,7 +289,7 @@
           "price_max": 32.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:15Z",
+          "checked_at": "2026-10-10T02:46:50Z",
           "match_note": "Manufacturer's own store — identical model 22-WRP-4603.",
           "manual": false,
           "stale": false
@@ -318,7 +318,7 @@
         "price_max": 169.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:16Z",
+        "checked_at": "2026-10-10T02:46:50Z",
         "stale": false
       },
       "competitors": {
@@ -329,7 +329,7 @@
           "price_max": 164.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:16Z",
+          "checked_at": "2026-10-10T02:46:50Z",
           "match_note": "Confirmed same product — shared SKU core 2080 (W&W: 14-2080-WOW, Up North: WOW14-2080).",
           "manual": false,
           "stale": false
@@ -341,7 +341,7 @@
           "price_max": 99.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:16Z",
+          "checked_at": "2026-10-10T02:46:50Z",
           "match_note": "Manufacturer's own store — identical model 14-2080.",
           "manual": false,
           "stale": false
@@ -358,7 +358,7 @@
         "price_max": 59.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:17Z",
+        "checked_at": "2026-10-10T02:46:50Z",
         "stale": false
       },
       "competitors": {
@@ -369,7 +369,7 @@
           "price_max": 34.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:17Z",
+          "checked_at": "2026-10-10T02:46:51Z",
           "match_note": "Manufacturer's own store — identical SKU QWQJA07.",
           "manual": false,
           "stale": false
@@ -386,7 +386,7 @@
         "price_max": 117.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:18Z",
+        "checked_at": "2026-10-10T02:46:51Z",
         "stale": false
       },
       "competitors": {
@@ -397,7 +397,7 @@
           "price_max": 87.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:18Z",
+          "checked_at": "2026-10-10T02:46:51Z",
           "match_note": "Manufacturer's own store — identical SKU AIR-PICKUP-ZQG.",
           "manual": false,
           "stale": false
@@ -414,7 +414,7 @@
         "price_max": 179.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:18Z",
+        "checked_at": "2026-10-10T02:46:51Z",
         "stale": false
       },
       "competitors": {
@@ -425,7 +425,7 @@
           "price_max": 149.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:18Z",
+          "checked_at": "2026-10-10T02:46:52Z",
           "match_note": "Manufacturer's own store — identical SKUs PKT201/202/203/205-5558W.",
           "manual": false,
           "stale": false
@@ -442,7 +442,7 @@
         "price_max": 209.95,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:19Z",
+        "checked_at": "2026-10-10T02:46:52Z",
         "stale": false
       },
       "competitors": {
@@ -453,7 +453,7 @@
           "price_max": 179.99,
           "currency": "USD",
           "available": null,
-          "checked_at": "2026-10-09T23:31:19Z",
+          "checked_at": "2026-10-10T02:46:52Z",
           "match_note": "Manufacturer's own store — identical SKUs RV9005-0810 to RV9005-1820, same sizes.",
           "manual": false,
           "stale": false
@@ -470,7 +470,7 @@
         "price_max": 179.0,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:20Z",
+        "checked_at": "2026-10-10T02:46:52Z",
         "stale": false
       },
       "competitors": {
@@ -498,7 +498,7 @@
         "price_max": 481.24,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:20Z",
+        "checked_at": "2026-10-10T02:46:52Z",
         "stale": false
       },
       "competitors": {
@@ -526,7 +526,7 @@
         "price_max": 393.07,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:20Z",
+        "checked_at": "2026-10-10T02:46:52Z",
         "stale": false
       },
       "competitors": {
@@ -554,7 +554,7 @@
         "price_max": 65.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:21Z",
+        "checked_at": "2026-10-10T02:46:52Z",
         "stale": false
       },
       "competitors": {
@@ -582,7 +582,7 @@
         "price_max": 89.98,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:21Z",
+        "checked_at": "2026-10-10T02:46:53Z",
         "stale": false
       },
       "competitors": {
@@ -610,7 +610,7 @@
         "price_max": 39.99,
         "currency": "USD",
         "available": null,
-        "checked_at": "2026-10-09T23:31:21Z",
+        "checked_at": "2026-10-10T02:46:53Z",
         "stale": false
       },
       "competitors": {
@@ -629,5 +629,5 @@
       }
     }
   },
-  "generated_at": "2026-10-09T23:31:21Z"
+  "generated_at": "2026-10-10T02:46:53Z"
 }

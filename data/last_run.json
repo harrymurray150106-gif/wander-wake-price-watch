@@ -3,10 +3,15 @@
   "changed": 0,
   "errors": [
     {
+      "product": "umbrauto-camper-cover",
+      "source": "Wander & Wake",
+      "error": "HTTP 404"
+    },
+    {
       "product": "(sitemap sweep)",
       "source": "wanderandwakestore.com",
       "error": "HTTP 400"
     }
   ],
-  "run_at": "2026-11-13T18:05:26Z"
+  "run_at": "2026-11-13T23:33:26Z"
 }

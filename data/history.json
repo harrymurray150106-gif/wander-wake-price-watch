@@ -7,5 +7,23 @@
     "kind": "competitor",
     "old_price": 34.99,
     "new_price": 49.99
+  },
+  {
+    "at": "2026-11-14T10:57:19Z",
+    "product_id": "wow-saddle-seat",
+    "product_name": "WOW Watersports Vacation Mode Molded Foam Saddle Seat",
+    "retailer": "Overton's",
+    "kind": "competitor",
+    "old_price": 29.99,
+    "new_price": 19.97
+  },
+  {
+    "at": "2026-11-14T10:57:20Z",
+    "product_id": "wow-resort-island",
+    "product_name": "WOW Watersports Inflatable Resort Island (6-8 Person Floating Lounger)",
+    "retailer": "Overton's",
+    "kind": "competitor",
+    "old_price": 299.99,
+    "new_price": 199.97
   }
 ]

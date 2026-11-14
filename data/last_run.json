@@ -1,6 +1,6 @@
 {
   "checked": 46,
-  "changed": 0,
+  "changed": 2,
   "errors": [
     {
       "product": "(sitemap sweep)",
@@ -8,5 +8,5 @@
       "error": "HTTP 400"
     }
   ],
-  "run_at": "2026-11-14T03:35:14Z"
+  "run_at": "2026-11-14T10:57:23Z"
 }

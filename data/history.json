@@ -25,5 +25,23 @@
     "kind": "competitor",
     "old_price": 299.99,
     "new_price": 199.97
+  },
+  {
+    "at": "2026-11-19T04:22:54Z",
+    "product_id": "wow-wakesurf-rope-25",
+    "product_name": "WOW Watersports 25 ft Wakesurf Rope (4-Section, EVA Handle)",
+    "retailer": "WOW Sports (official store)",
+    "kind": "competitor",
+    "old_price": 54.99,
+    "new_price": 39.99
+  },
+  {
+    "at": "2026-11-19T04:22:59Z",
+    "product_id": "wow-water-walkway",
+    "product_name": "WOW Watersports Inflatable Water Walkway (6 ft x 6 ft Floating Platform)",
+    "retailer": "WOW Sports (official store)",
+    "kind": "competitor",
+    "old_price": 99.99,
+    "new_price": 69.99
   }
 ]
